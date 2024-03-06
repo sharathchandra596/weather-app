@@ -22,6 +22,9 @@ function checkWeather(city)
         weatherImg.setAttribute("src",`./images/${data.weather[0].main}.png`)
         inputvalue.value=''
     })
+    .catch((err)=>{
+        return(alert("Enter valid city Name"))
+    })
   
 }
 
