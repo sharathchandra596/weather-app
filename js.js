@@ -26,6 +26,10 @@ function checkWeather(city)
 }
 
 btn.addEventListener('click',()=>{
+    if(inputvalue.value=='')
+    {
+        alert("enter the city name")
+    }
     checkWeather(inputvalue.value)
     
 })
